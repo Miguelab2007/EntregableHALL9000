@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio oficial del Semillero de Investigación HAL 9000: divulgación académica, eventos, equipos y resultados." />
+    <title>HAL 9000 | Investigación Universitaria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="decoracion-lateral" aria-hidden="true">
+        <aside class="decoracion-columna decoracion-izquierda">
+            <div class="constelacion constelacion-orion">
+                <svg class="constelacion-svg" viewBox="0 0 140 1000" preserveAspectRatio="xMidYMid slice" role="presentation" focusable="false">
+                    <path class="constelacion-linea" pathLength="100" d="M40 90 L60 170 L74 310 L58 470 L42 650 L52 830" />
+                    <path class="constelacion-linea" pathLength="100" d="M104 110 L86 230 L74 310 L92 486 L106 660 L96 860" />
+                    <path class="constelacion-linea" pathLength="100" d="M58 470 L74 520 L92 486" />
+                    <circle class="estrella estrella-1" cx="40" cy="90" r="4.2" />
+                    <circle class="estrella estrella-2" cx="60" cy="170" r="3.3" />
+                    <circle class="estrella estrella-3" cx="74" cy="310" r="3.9" />
+                    <circle class="estrella estrella-4" cx="58" cy="470" r="3" />
+                    <circle class="estrella estrella-5" cx="74" cy="520" r="2.8" />
+                    <circle class="estrella estrella-6" cx="92" cy="486" r="3.2" />
+                    <circle class="estrella estrella-7" cx="42" cy="650" r="3.3" />
+                    <circle class="estrella estrella-8" cx="106" cy="660" r="3.7" />
+                    <circle class="estrella estrella-9" cx="104" cy="110" r="4.4" />
+                    <circle class="estrella estrella-10" cx="86" cy="230" r="3" />
+                    <circle class="estrella estrella-11" cx="52" cy="830" r="3" />
+                    <circle class="estrella estrella-12" cx="96" cy="860" r="3.1" />
+                </svg>
+            </div>
+        </aside>
+
+        <aside class="decoracion-columna decoracion-derecha">
+            <div class="constelacion constelacion-casiopea">
+                <svg class="constelacion-svg" viewBox="0 0 140 1000" preserveAspectRatio="xMidYMid slice" role="presentation" focusable="false">
+                    <path class="constelacion-linea" pathLength="100" d="M30 140 L54 100 L76 170 L102 120 L118 190" />
+                    <path class="constelacion-linea" pathLength="100" d="M38 420 L64 500 L88 430 L112 520" />
+                    <path class="constelacion-linea" pathLength="100" d="M32 760 L58 710 L84 780 L112 730" />
+                    <circle class="estrella estrella-1" cx="30" cy="140" r="4.1" />
+                    <circle class="estrella estrella-2" cx="54" cy="100" r="3.5" />
+                    <circle class="estrella estrella-3" cx="76" cy="170" r="3.4" />
+                    <circle class="estrella estrella-4" cx="102" cy="120" r="3.6" />
+                    <circle class="estrella estrella-5" cx="118" cy="190" r="4.3" />
+                    <circle class="estrella estrella-6" cx="38" cy="420" r="2.9" />
+                    <circle class="estrella estrella-7" cx="64" cy="500" r="3.1" />
+                    <circle class="estrella estrella-8" cx="88" cy="430" r="2.9" />
+                    <circle class="estrella estrella-9" cx="112" cy="520" r="3.1" />
+                    <circle class="estrella estrella-10" cx="32" cy="760" r="3" />
+                    <circle class="estrella estrella-11" cx="58" cy="710" r="3" />
+                    <circle class="estrella estrella-12" cx="84" cy="780" r="3.1" />
+                    <circle class="estrella estrella-13" cx="112" cy="730" r="3.2" />
+                </svg>
+            </div>
+        </aside>
+    </div>
+
+    <header class="encabezado" id="inicio">
+        <nav class="navegacion" aria-label="Principal">
+            <a class="marca" href="#inicio">
+                <span class="marca-icono"><i class="fa-solid fa-circle-dot"></i></span>
+                <span class="marca-texto">HAL 9000</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menuPrincipal">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-semillero">Sobre el Semillero</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#equipos">Equipos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" aria-label="Presentación del semillero">
+            <article class="hero-contenido animate__animated animate__fadeInUp" data-aos="fade-up">
+                <div class="hero-cuerpo">
+                    <div class="hero-texto">
+                        <p class="hero-etiqueta">Ciencia y exploración avanzada</p>
+                        <h1>Semillero de Investigación HAL 9000</h1>
+                        <p class="hero-lema">Formamos capacidades para innovar con rigor, visión tecnológica y proyección de futuro.</p>
+                        <p class="hero-resumen">
+                            Impulsamos investigación interdisciplinaria, análisis de datos y sistemas inteligentes para desarrollar soluciones
+                            con impacto académico. Nuestra perspectiva integra exploración espacial, pensamiento computacional y excelencia institucional.
+                        </p>
+                        <a class="boton-principal" href="#sobre-semillero">🛸 Iniciar exploración</a>
+                    </div>
+
+                    <figure class="hero-media" data-aos="zoom-in-left" data-aos-delay="120">
+                        <img src="img/2001-Odisea-en-el-Espacio-1.jpg" alt="Escena espacial inspirada en 2001: Odisea del espacio" title="2001: Odisea del Espacio ©" />
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <section class="seccion" id="sobre-semillero" aria-labelledby="titulo-sobre">
+            <header class="encabezado-seccion animate__animated animate__fadeInRight" data-aos="fade-right">
+                <p class="subtitulo">Identidad institucional</p>
+                <h2 id="titulo-sobre">Sobre el Semillero</h2>
+            </header>
+
+            <article class="bloque-informacion" data-aos="fade-up">
+                <h3>Reseña histórica</h3>
+                <div class="resena-historica">
+                    <div class="resena-texto">
+                        <p>
+                            El Semillero de Investigación HAL 9000 nace a mediados de la década de 2010 como una iniciativa académica orientada
+                            al estudio de la exploración espacial y los sistemas inteligentes, con una visión formativa de alto nivel.
+                        </p>
+                        <p>
+                            Inspirado en los avances de la NASA y en tecnologías aplicadas a misiones espaciales, se consolida como un entorno
+                            interdisciplinario donde convergen investigación, análisis y desarrollo tecnológico.
+                        </p>
+                        <ul class="resena-puntos">
+                            <li>Análisis de datos astronómicos para apoyar procesos de investigación aplicada.</li>
+                            <li>Simulación de entornos espaciales con enfoque académico y experimental.</li>
+                            <li>Diseño de soluciones basadas en inteligencia artificial para retos científicos.</li>
+                        </ul>
+                    </div>
+
+                    <figure class="resena-media">
+                        <img src="img/art002e004411~medium.jpg" alt="Visual de exploración espacial y tecnología avanzada" title="Telescopio Espacial Hubble ©" />
+                    </figure>
+                </div>
+            </article>
+
+            <div class="rejilla-sobre">
+                <article class="tarjeta-info" data-aos="zoom-in-up">
+                    <h3>🚀 Misión</h3>
+                    <figure class="tarjeta-info-media">
+                        <img src="img/2.jpg" alt="Nave espacial en ascenso representando la misión del semillero" title="Artemis I ©" />
+                    </figure>
+                    <p>
+                        Formar investigadores capaces de diseñar soluciones innovadoras en exploración espacial y sistemas inteligentes,
+                        integrando ciencia, tecnología y pensamiento crítico para enfrentar los desafíos del futuro.
+                    </p>
+                </article>
+
+                <article class="tarjeta-info" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3>🌌 Visión</h3>
+                    <figure class="tarjeta-info-media">
+                        <img src="img/3.jpg" alt="Panorama cósmico que representa la visión de futuro del semillero" title="Voyager 1 ©" />
+                    </figure>
+                    <p>
+                        Ser un referente académico en investigación aplicada, reconocido por impulsar talento y generar conocimiento en
+                        áreas estratégicas como la inteligencia artificial y la exploración del cosmos.
+                    </p>
+                </article>
+            </div>
+
+            <article class="bloque-informacion bloque-objetivos" data-aos="fade-up">
+                <div class="objetivos-diseno">
+                    <div class="objetivos-texto">
+                        <p class="objetivos-etiqueta">Núcleo estratégico</p>
+                        <h3>Objetivos</h3>
+
+                        <section class="objetivo-general" aria-label="Objetivo general del semillero">
+                            <h4>Objetivo General</h4>
+                            <p>
+                                Formar investigadores capaces de diseñar y ejecutar soluciones tecnológicas en escenarios complejos,
+                                integrando inteligencia artificial y exploración del espacio.
+                            </p>
+                        </section>
+
+                        <section class="objetivos-especificos" aria-label="Objetivos específicos del semillero">
+                            <h4>🔹 Objetivos Específicos</h4>
+                            <ul>
+                                <li>Explorar el uso de sistemas inteligentes en misiones y entornos simulados.</li>
+                                <li>Analizar información científica para la comprensión del cosmos.</li>
+                                <li>Diseñar soluciones innovadoras basadas en tecnología avanzada.</li>
+                                <li>Potenciar el pensamiento crítico y la investigación aplicada.</li>
+                                <li>Contribuir al desarrollo de conocimiento en contextos de alta exigencia tecnológica.</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <figure class="objetivos-media">
+                        <img src="img/ng-2-ascent-2.jpg" alt="Módulo espacial ascendiendo en entorno de misión avanzada" title="Mars 2020 Perseverance ©" />
+                        <figcaption>Ruta de innovación en entornos de alta complejidad.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="bloque-informacion" data-aos="fade-up">
+                <div class="resena-historica lineas-investigacion-diseno">
+                    <div class="resena-texto lineas-investigacion-texto">
+                        <h3>Líneas de investigación</h3>
+                        <ul class="lineas-investigacion-lista">
+                            <li><strong>Inteligencia Artificial para Navegación y Autonomía Espacial</strong><br />Diseño de modelos de percepción, planificación y control para operación robusta en entornos orbitales y de superficie planetaria.</li>
+                            <li><strong>Analítica Predictiva de Datos de Misión</strong><br />Integración de telemetría, imágenes y series temporales para detección temprana de anomalías y soporte a decisiones en tiempo real.</li>
+                            <li><strong>Sistemas Ciberfísicos y Arquitecturas de Alta Confiabilidad</strong><br />Desarrollo de plataformas embebidas, comunicación tolerante a fallos y coordinación distribuida para misiones de larga duración.</li>
+                            <li><strong>Simulación Computacional de Entornos y Operaciones Espaciales</strong><br />Construcción de gemelos digitales y escenarios de entrenamiento para validar algoritmos de IA, estrategias de control y protocolos de misión.</li>
+                        </ul>
+                    </div>
+
+                    <figure class="resena-media lineas-investigacion-media">
+                        <img src="img/5.jpg" alt="Composición visual de exploración espacial e inteligencia artificial" title="James Webb Space Telescope ©" />
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion" id="eventos" aria-labelledby="titulo-eventos">
+            <header class="encabezado-seccion animate__animated animate__fadeInRight" data-aos="fade-right">
+                <p class="subtitulo">Agenda académica</p>
+                <h2 id="titulo-eventos">Eventos</h2>
+            </header>
+
+            <div class="rejilla-eventos">
+                <article class="card-evento" data-aos="fade-up">
+                    <div class="evento-layout">
+                        <div class="evento-contenido">
+                            <p class="evento-fecha">6 DE ABRIL DE 2026 1:00 PM</p>
+                            <h3>La tripulación Artemis II de la NASA vuela alrededor de la Luna (transmisión oficial)</h3>
+                            <figure class="evento-media-featured">
+                                <img src="img/9.jpg" alt="Vista orbital de la Luna durante misión tripulada Artemis" title="Cobertura Artemis II ©" />
+                            </figure>
+                            <p>
+                                Cobertura del sobrevuelo lunar tripulado del programa Artemis. La misión verifica sistemas críticos de navegación,
+                                comunicaciones y operación de largo alcance para consolidar la siguiente fase de exploración cislunar.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-evento" data-aos="fade-up" data-aos-delay="100">
+                    <div class="evento-layout">
+                        <div class="evento-contenido">
+                            <p class="evento-fecha">15 DE ABRIL DE 2026 8:30 AM</p>
+                            <h3>Lanzamiento de la 24.ª misión de reabastecimiento comercial de la NASA</h3>
+                            <figure class="evento-media-featured">
+                                <img src="img/7.jpg" alt="Lanzamiento de cohete en plataforma espacial durante misión de carga" title="Misión de reabastecimiento NASA ©" />
+                            </figure>
+                            <p>
+                                Transmisión del despegue de la nave de carga Cygnus NG-24 rumbo a la Estación Espacial Internacional,
+                                con ventana operativa matutina y seguimiento de parámetros en tiempo real.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-evento" data-aos="fade-up" data-aos-delay="200">
+                    <div class="evento-layout">
+                        <div class="evento-contenido">
+                            <p class="evento-fecha">18 DE ABRIL DE 2026 12:30 PM</p>
+                            <h3>Cygnus NG-24: encuentro y captura en la Estación Espacial Internacional</h3>
+                            <figure class="evento-media-featured">
+                                <img src="img/8.jpg" alt="Operación de encuentro y captura orbital de nave de carga" title="Cygnus NG-24 ©" />
+                            </figure>
+                            <p>
+                                Cobertura del acoplamiento asistido y captura robótica de la misión de carga, con énfasis en seguridad operativa,
+                                sincronización orbital y plan logístico para soporte científico en microgravedad.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="equipos" aria-labelledby="titulo-equipos">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Trabajo colaborativo</p>
+                <h2 id="titulo-equipos">Equipos de Trabajo</h2>
+            </header>
+
+            <div class="rejilla-equipos">
+                <article class="equipo" data-aos="fade-up">
+                    <h3>Unidad de Inteligencia Artificial para Misiones NASA</h3>
+                    <p>
+                        Desarrolla sistemas inteligentes para procesamiento de telemetría, navegación autónoma y soporte analítico en misiones de exploración espacial.
+                    </p>
+                    <div class="integrantes">
+                        <article class="integrante">
+                            <img src="img/Integrantes/K.jpg" alt="Foto de Kanye Omari West, coordinador de IA" />
+                            <h4>Kanye Omari West</h4>
+                            <p>Coordinador de IA</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/N.jpg" alt="Foto de Benjamín Netanyahu, especialista en sistemas autónomos" />
+                            <h4>Benjamín Netanyahu</h4>
+                            <p>Especialista en Sistemas Autónomos</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/B.jpg" alt="Foto de George H. W. Bush, arquitecto de sistemas autónomos" />
+                            <h4>George H. W. Bush</h4>
+                            <p>Arquitecto de Sistemas Autónomos</p>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="equipo" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Unidad de Simulación y Exploración Lunar</h3>
+                    <p>
+                        Integra simulación orbital, validación de escenarios cislunares y análisis de operaciones para respaldar misiones espaciales de alta complejidad.
+                    </p>
+                    <div class="integrantes">
+                        <article class="integrante">
+                            <img src="img/Integrantes/V.jpg" alt="Foto de Vladímir Putin, ingeniero de simulación espacial" />
+                            <h4>Vladímir Putin</h4>
+                            <p>Ingeniero de Simulación Espacial</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/S.jpg" alt="Foto de Iósif Stalin, analista de datos científicos" />
+                            <h4>Iósif Stalin</h4>
+                            <p>Analista de Datos Científicos</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/R.jpg" alt="Foto de Nikita Jrushchov, ingeniero de simulación orbital" />
+                            <h4>Nikita Jrushchov</h4>
+                            <p>Ingeniero de Simulación Orbital</p>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="equipo" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Unidad de Operaciones Cislunares y Robótica</h3>
+                    <p>
+                        Coordina arquitecturas robóticas, protocolos de operación remota y análisis de misión para entornos lunares y de espacio profundo.
+                    </p>
+                    <div class="integrantes">
+                        <article class="integrante">
+                            <img src="img/Integrantes/M.jpg" alt="Foto de Mao Zedong, coordinador de operaciones cislunares" />
+                            <h4>Mao Zedong</h4>
+                            <p>Coordinador de Operaciones Cislunares</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/X.jpg" alt="Foto de Xi Jinping, ingeniero de robótica de misión" />
+                            <h4>Xi Jinping</h4>
+                            <p>Ingeniero de Robótica de Misión</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/KIM.jpg" alt="Foto de Kim Jong un, analista de telemetría espacial" />
+                            <h4>Kim Jong un</h4>
+                            <p>Analista de Telemetría Espacial</p>
+                        </article>
+                        <article class="integrante">
+                            <img src="img/Integrantes/L.jpg" alt="Foto de Lee Jae-myung, especialista en enlace de misión" />
+                            <h4>Lee Jae-myung</h4>
+                            <p>Especialista en Enlace de Misión</p>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="resultados" aria-labelledby="titulo-resultados">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Validación y transferencia de conocimiento</p>
+                <h2 id="titulo-resultados">Proyectos de Impacto Académico</h2>
+            </header>
+
+            <div class="rejilla-resultados">
+                <article class="resultado" data-aos="fade-up">
+                    <figure class="resultado-media">
+                        <img src="img/555.jpg" alt="Misión TOPEX/Poseidon - Monitoreo de océanos y niveles del mar" title="TOPEX/Poseidon ©" />
+                    </figure>
+                    <div class="resultado-contenido">
+                        <h3>🌊 Misión TOPEX/Poseidon</h3>
+                        <p class="resultado-etiqueta">Resultado obtenido:</p>
+                        <p>
+                            Programa conjunto NASA-CNES de observación oceanográfica que revolucionó el monitoreo de temperaturas del mar, corrientes oceánicas y predicción de fenómenos climáticos. Proporciona datos críticos para estudios de cambio climático, funcionando durante 13 años con precisión altimétrica sin precedentes en la historia de la teledetección espacial.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="resultado" data-aos="fade-up" data-aos-delay="100">
+                    <figure class="resultado-media">
+                        <img src="img/666.jpg" alt="Programa Apollo - Exploración tripulada de la Luna" title="Apollo Program ©" />
+                    </figure>
+                    <div class="resultado-contenido">
+                        <h3>🚀 Programa Apollo</h3>
+                        <p class="resultado-etiqueta">Resultado obtenido:</p>
+                        <p>
+                            Iniciativa emblemática de la NASA que logró llevar humanos a la Luna entre 1969-1972, estableciendo base de investigación lunar y recolectando 382 kg de muestras. Representa el pico de la ingeniería aeroespacial del siglo XX, con sistemas de navegación, comunicación y vida soporte de máxima confiabilidad en entornos extraterrestres.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="resultado" data-aos="fade-up" data-aos-delay="200">
+                    <figure class="resultado-media">
+                        <img src="img/777.jpg" alt="Telescopio Espacial James Webb - Observatorio astronómico avanzado" title="James Webb Space Telescope ©" />
+                    </figure>
+                    <div class="resultado-contenido">
+                        <h3>🔭 Telescopio Espacial James Webb</h3>
+                        <p class="resultado-etiqueta">Resultado obtenido:</p>
+                        <p>
+                            Observatorio espacial de generación próxima de NASA, ESA y CSA, operando a 1.5 millones de km de la Tierra. Captura del infrarrojo las primeras galaxias del universo y analiza atmósferas de exoplanetas con resolución espectral sin precedentes, transformando nuestra comprensión del cosmos en tiempo real desde su lanzamiento en 2021.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="productos" aria-labelledby="titulo-productos">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Producción académica</p>
+                <h2 id="titulo-productos">Productos Académicos</h2>
+            </header>
+
+            <div class="rejilla-productos">
+                <article class="producto" data-aos="flip-left">
+                    <figure class="producto-media">
+                        <img src="img/nasa-contributions-aeronautics-v1-cover.jpg" alt="Carátula del libro NASAsContributionsToAeronauticsVolume1" title="NASA's Contributions to Aeronautics Volume 1 ©" />
+                    </figure>
+                    <h3>NASAsContributionsToAeronauticsVolume1</h3>
+                    <p class="producto-meta">
+                        <span><strong>Tipo:</strong> Libro</span>
+                        <span><strong>Autor(es):</strong> Richard P. Hallion</span>
+                        <span><strong>Año:</strong> 2010</span>
+                    </p>
+                    <p>
+                        Compendio técnico de la NASA que documenta contribuciones clave en aerodinámica, estructuras, propulsión y sistemas de control,
+                        con hitos históricos que impulsaron la ingeniería aeronáutica moderna.
+                    </p>
+                    <a class="boton-secundario" href="docs/NASAsContributionsToAeronauticsVolume1.pdf" download>Descargar PDF</a>
+                </article>
+
+                <article class="producto" data-aos="flip-left" data-aos-delay="100">
+                    <figure class="producto-media">
+                        <img src="img/nasa2.jpg" alt="Carátula del libro NASAsContributionsToAeronauticsVolume2" title="NASA's Contributions to Aeronautics Volume 2 ©" />
+                    </figure>
+                    <h3>NASAsContributionsToAeronauticsVolume2</h3>
+                    <p class="producto-meta">
+                        <span><strong>Tipo:</strong> Libro</span>
+                        <span><strong>Autor(es):</strong> Richard P. Hallion</span>
+                        <span><strong>Año:</strong> 2010</span>
+                    </p>
+                    <p>
+                        Segundo volumen de referencia técnica de la NASA con avances en investigación aeroespacial, integración de sistemas,
+                        seguridad de vuelo y evolución de tecnologías aplicadas a la aviación moderna.
+                    </p>
+                    <a class="boton-secundario" href="docs/NASAsContributionsToAeronauticsVolume2.pdf" download>Descargar PDF</a>
+                </article>
+
+                <article class="producto" data-aos="flip-left" data-aos-delay="200">
+                    <figure class="producto-media">
+                        <img src="img/nasa3.jpeg" alt="Carátula del documento Probing the Sky" title="Probing the Sky ©" />
+                    </figure>
+                    <h3>Probing the Sky</h3>
+                    <p class="producto-meta">
+                        <span><strong>Tipo:</strong> Libro</span>
+                        <span><strong>Autor(es):</strong> Richard A. Sramek</span>
+                        <span><strong>Año:</strong> 1999</span>
+                    </p>
+                    <p>
+                        Publicación técnica enfocada en observación y exploración atmosférica, con aportes sobre instrumentación,
+                        métodos de medición y análisis científico aplicados por la NASA.
+                    </p>
+                    <a class="boton-secundario" href="docs/probing_the_sky.pdf" download>Descargar PDF</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="galeria" aria-labelledby="titulo-galeria">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Memoria visual</p>
+                <h2 id="titulo-galeria">Galería</h2>
+            </header>
+
+            <div class="rejilla-galeria">
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/7.jpg" data-lightbox="galeria-semillero" data-title="Lanzamiento" data-aos="zoom-in">
+                        <img src="img/7.jpg" alt="Lanzamiento de cohete en plataforma espacial" />
+                    </a>
+                    <span class="etiqueta-imagen">Lanzamiento</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/8.jpg" data-lightbox="galeria-semillero" data-title="Carga orbital" data-aos="zoom-in" data-aos-delay="80">
+                        <img src="img/8.jpg" alt="Nave de carga en operación orbital" />
+                    </a>
+                    <span class="etiqueta-imagen">Carga orbital</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/9.jpg" data-lightbox="galeria-semillero" data-title="Misión lunar" data-aos="zoom-in" data-aos-delay="160">
+                        <img src="img/9.jpg" alt="Misión tripulada alrededor de la Luna" />
+                    </a>
+                    <span class="etiqueta-imagen">Misión lunar</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/nasa3.jpeg" data-lightbox="galeria-semillero" data-title="Publicación NASA" data-aos="zoom-in" data-aos-delay="240">
+                        <img src="img/nasa3.jpeg" alt="Portada histórica de publicación aeroespacial de la NASA" />
+                    </a>
+                    <span class="etiqueta-imagen">Publicación NASA</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/2.jpg" data-lightbox="galeria-semillero" data-title="Artemis I" data-aos="zoom-in" data-aos-delay="320">
+                        <img src="img/2.jpg" alt="Nave espacial en ascenso durante una misión científica" />
+                    </a>
+                    <span class="etiqueta-imagen">Artemis I</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/3.jpg" data-lightbox="galeria-semillero" data-title="Artemis II" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="img/3.jpg" alt="Panorama cósmico de exploración astronómica" />
+                    </a>
+                    <span class="etiqueta-imagen">Artemis II</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/4.jpg" data-lightbox="galeria-semillero" data-title="Cygnus NG-24" data-aos="zoom-in" data-aos-delay="480">
+                        <img src="img/4.jpg" alt="Imagen temática de investigación espacial" />
+                    </a>
+                    <span class="etiqueta-imagen">Cygnus NG-24</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/5.jpg" data-lightbox="galeria-semillero" data-title="James Webb" data-aos="zoom-in" data-aos-delay="560">
+                        <img src="img/5.jpg" alt="Composición visual de ciencia y tecnología espacial" />
+                    </a>
+                    <span class="etiqueta-imagen">James Webb</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/6.jpg" data-lightbox="galeria-semillero" data-title="Mars 2020" data-aos="zoom-in" data-aos-delay="640">
+                        <img src="img/6.jpg" alt="Escena de exploración y observación espacial" />
+                    </a>
+                    <span class="etiqueta-imagen">Mars 2020</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/555.jpg" data-lightbox="galeria-semillero" data-title="TOPEX/Poseidon" data-aos="zoom-in" data-aos-delay="720">
+                        <img src="img/555.jpg" alt="Misión de observación de la Tierra desde el espacio" />
+                    </a>
+                    <span class="etiqueta-imagen">TOPEX/Poseidon</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/666.jpg" data-lightbox="galeria-semillero" data-title="Voyager 1" data-aos="zoom-in" data-aos-delay="800">
+                        <img src="img/666.jpg" alt="Proyecto académico sobre exploración lunar" />
+                    </a>
+                    <span class="etiqueta-imagen">Voyager 1</span>
+                </div>
+                <div class="imagen-etiquetada">
+                    <a class="imagen-galeria-media" href="img/777.jpg" data-lightbox="galeria-semillero" data-title="Hubble Space Telescope" data-aos="zoom-in" data-aos-delay="880">
+                        <img src="img/777.jpg" alt="Imagen de referencia para divulgación aeroespacial" />
+                    </a>
+                    <span class="etiqueta-imagen">Hubble Space Telescope</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="noticias" aria-labelledby="titulo-noticias">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Valor agregado</p>
+                <h2 id="titulo-noticias">Noticias del Semillero</h2>
+            </header>
+
+            <div class="rejilla-noticias">
+                <article class="noticia" data-aos="fade-up">
+                    <figure class="noticia-media">
+                        <img src="img/N1.jpg" alt="Vista de la atmósfera terrestre capturada durante la misión Artemis II" />
+                    </figure>
+                    <h3>Tripulación de la EEI y Artemis II coordinan agenda científica en vuelo</h3>
+                    <p>
+                        Integrantes de la Expedición 74 sostuvieron una llamada con la tripulación de Artemis II tras su sobrevuelo lunar,
+                        en una coordinación inédita para alinear actividades de investigación entre órbita baja y entorno cislunar.
+                    </p>
+                    <p>
+                        El intercambio fortaleció la planificación científica conjunta de la NASA y sus socios, priorizando observación de
+                        la Tierra, monitoreo de misión y análisis de datos en tiempo real.
+                    </p>
+                </article>
+                <article class="noticia" data-aos="fade-up" data-aos-delay="100">
+                    <figure class="noticia-media">
+                        <img src="img/N2.jpg" alt="Fotografía del sobrevuelo lunar tomada por la tripulación de Artemis II" />
+                    </figure>
+                    <h3>Artemis II publica nuevas imágenes oficiales del sobrevuelo lunar</h3>
+                    <p>
+                        La NASA difundió una nueva serie de fotografías capturadas durante el vuelo de prueba alrededor de la Luna,
+                        con ajustes editoriales en subtítulos para reflejar observaciones científicas actualizadas.
+                    </p>
+                    <p>
+                        Las imágenes documentan condiciones visuales y operativas del trayecto, aportando evidencia clave para discusión
+                        técnica sobre navegación, iluminación y lectura del entorno lunar.
+                    </p>
+                </article>
+                <article class="noticia" data-aos="fade-up" data-aos-delay="200">
+                    <figure class="noticia-media">
+                        <img src="img/N3.jpg" alt="Imagen de la Tierra sobre el horizonte lunar durante misión Artemis II" />
+                    </figure>
+                    <h3>Tierra puesta: registro visual de Artemis II sobre la cara oculta lunar</h3>
+                    <p>
+                        La tripulación de Artemis II capturó una vista de la puesta de la Tierra mientras orbitaba la Luna,
+                        generando una referencia visual de alto valor para divulgación y análisis científico.
+                    </p>
+                    <p>
+                        Durante el recorrido, los astronautas describieron rasgos del terreno lunar, incluidos cráteres y zonas de impacto,
+                        fortaleciendo el contexto de futuras misiones tripuladas.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion seccion-contacto" id="contacto" aria-labelledby="titulo-contacto">
+            <header class="encabezado-seccion" data-aos="fade-right">
+                <p class="subtitulo">Comunicación y Colaboración</p>
+                <h2 id="titulo-contacto">Contacto</h2>
+            </header>
+
+            <div class="contacto-grid" data-aos="fade-up">
+                <article class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <p>
+                        Si deseas vincularte, participar en nuestros proyectos o recibir información sobre convocatorias, no dudes en contactarnos.
+                    </p>
+                    <ul class="lista-contacto">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Edificio de Laboratorios, Oficina 404, Campus Central</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>semillero.hal9000@universidad.edu.co</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <div>
+                                <strong>Redes Sociales</strong>
+                                <div class="redes-sociales-contacto">
+                                    <a href="#" onclick="return false;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" onclick="return false;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" onclick="return false;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="contacto-formulario">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="formularioContacto" novalidate>
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required />
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="correo">Correo institucional</label>
+                            <input type="email" id="correo" name="correo" placeholder="usuario@universidad.edu.co" required />
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                        </div>
+                        <button type="submit" class="boton-principal">Enviar Mensaje</button>
+                        <p id="mensajeFormulario" class="mensaje-formulario" aria-live="polite"></p>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="pie-pagina-contenido">
+            <div class="pie-pagina-info">
+                <h3>Semillero de Investigación HAL 9000</h3>
+                <p>Facultad de Ingeniería | Universidad de la Amazonia</p>
+                <p><a href="mailto:semillero.hal9000@universidad.edu.co">semillero.hal9000@universidad.edu.co</a></p>
+            </div>
+            <div class="pie-pagina-redes">
+                <a href="#" onclick="return false;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" onclick="return false;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" onclick="return false;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="pie-pagina-copyright">
+            <p>&copy; 2026 HAL 9000. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="boton-volver-inicio" id="botonVolverInicio" type="button" aria-label="Volver al inicio">
+        <i class="fa-solid fa-arrow-up"></i>
+        <span>Inicio</span>
+    </button>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2C5K+VUS9m/KJ0B0r0CMR8vS2Y5Pja/qvpDMAYA9Yg3EjFyv1I3VzBkYOPxfN3N3xaQa58aeGeq/QAdzTZiVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
